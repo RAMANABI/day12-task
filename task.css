@@ -1,0 +1,58 @@
+body{
+    display: grid;
+    padding: 2px;
+    gap: 10px;
+    background-color: #d3d3d3;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr ;
+    
+}
+body>*{
+    border: 1px solid black;
+}
+
+header{
+   grid-column-start: 2;
+   grid-column-end: 5;
+
+}
+header > h1{
+    display:flex;
+    justify-content: center;
+}
+header > h5{
+    display:flex;
+    justify-content: center;
+}
+
+main{
+   grid-row-start: 1;
+   grid-row-end: 5;
+   height: 90vh;
+   padding: 10px;
+}
+
+aside{
+  grid-column-start: 4;  
+  height: 110vh;
+  padding: 10px;
+}
+footer{
+    grid-row-start: 1;
+    grid-column-end: 6;
+    height: 90vh;
+    padding: 10px;
+}
+#sports{
+   grid-column-start: 1;
+   grid-column-end: 6;
+   justify-items: center;
+   padding: 10px;
+}
+#water{
+   grid-column-start: 2;
+   padding: 10px;
+}
+
+
+
